@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="Thêm nhân viên" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_themTenNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:endIconMode="clear_text" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/themTenNhanVien"
+            style="@style/TextStyle"
+            android:background="@color/white"
+            android:textColor="#0000FF"
+                android:hint="Tên nhân viên" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_themSdtNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:endIconMode="clear_text" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/themSdtNhanVien"
+            style="@style/TextStyle"
+            android:background="@color/white"
+            android:textColor="#0000FF"
+            android:hint="Số điện thoại" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Công việc">
+        </TextView>
+        <Spinner
+            android:id="@+id/spnCongViecNhanVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btnThemNhanVien"
+            style="@style/ButtonStyle"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:onClick="themNhanVien"
+            android:text="Thêm" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

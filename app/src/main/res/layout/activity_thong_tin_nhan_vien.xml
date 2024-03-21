@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".giaodien.ThongTinNhanVien">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TitleStyle"
+        android:text="Thông tin nhân viên">
+    </TextView>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <TextView
+           android:layout_width="182dp"
+           android:layout_height="match_parent"
+           android:text="Mã số nhân viên:"
+           android:textStyle="bold">
+
+       </TextView>
+       <TextView
+           android:id="@+id/ttMaCongNhanVien"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="12"
+           android:textStyle="bold">
+       </TextView>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:text="Tên nhân viên:"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:id="@+id/ttTenNhanVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tran Van Phuc"
+            android:textStyle="bold">
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:text="Tiền lương:"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:id="@+id/ttTienLuongNhanVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="90000 vnđ"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại:"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:id="@+id/ttSdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0932115270"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:text="Công việc:"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:id="@+id/ttCongViecNhanVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Phụ hồ"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnChinhSuaNhanVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="chinhSuaNhanVien"
+            android:layout_marginRight="20dp"
+            android:text="Chỉnh sửa">
+        </Button>
+        <Button
+            android:id="@+id/btnXoaNhanVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="xoaNhanVien"
+            android:text="Xóa">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

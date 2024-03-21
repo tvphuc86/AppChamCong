@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".giaodien.ChamCong">
+
+    <TextView
+        android:text="Chấm công"
+        style="@style/TitleStyle">
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_soNgayCong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:endIconMode="clear_text" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/soNgayCong"
+            style="@style/TextStyle"
+            android:background="@color/white"
+            android:textColor="#0000FF"
+            android:inputType="number"
+            android:hint="Số ngày công" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/lstCheckNhanvien">
+    </ListView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:onClick="luu">
+
+    </Button>
+
+</LinearLayout>
